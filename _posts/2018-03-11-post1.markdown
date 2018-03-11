@@ -1,5 +1,10 @@
 ---
 title: Encender Led con ESP8266 Micropython
+author: Kevin Lupera
+date: 10 de Marzo de 2018
+email: kevinlupera1997@outlook.com
+keywords: esp8266, MicroPython
+web: https://kevin-lupera.github.io/wemos
 ---
 {% include ads.html %}
 
@@ -19,7 +24,7 @@ Tutorial de como enceder un LED [^LED] Notas al pie de página con ESP8266 (Wemo
 
 ## Explicación
 
-Conectanos nuestra placa Wemos con Micropython al computador con el cabe USB y establecemos una conexión serial con Putty o con su programa de conexión serial preferido, una vez conectados procedemos a colocar el código que se muestra a continuación. Otra opcion para conectarse a la tarjeta ESP8266 para pasar archivos se explicara [aqui](url), se utiliza ampy y la consola CMD.
+Conectanos nuestra placa Wemos con Micropython[^MicroPython] al computador con el cabe USB y establecemos una conexión serial con Putty o con su programa de conexión serial preferido, una vez conectados procedemos a colocar el código que se muestra a continuación. Otra opcion para conectarse a la tarjeta ESP8266 para pasar archivos se explicara [aqui](url), se utiliza ampy y la consola CMD.
 
 ## Código
 
@@ -43,3 +48,4 @@ while True:
 [url]: (2018-03-11-post2-ampy.md)
 
 [^LED]: Iniciales de Light-Emitting Diode, Diodo Emisor de Luz.
+[^MicroPython]: <http://www.limni.net>

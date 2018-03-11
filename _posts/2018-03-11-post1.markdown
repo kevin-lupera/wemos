@@ -4,7 +4,6 @@ author: Kevin Lupera
 date: 10 de Marzo de 2018
 email: kevinlupera1997@outlook.com
 keywords: esp8266, MicroPython
-web: https://kevin-lupera.github.io/wemos
 ---
 {% include ads.html %}
 
@@ -48,4 +47,4 @@ while True:
 [url]: (2018-03-11-post2-ampy.md)
 
 [^LED]: Iniciales de Light-Emitting Diode, Diodo Emisor de Luz.
-[^MicroPython]: <http://www.limni.net>
+[^MicroPython]: <http://micropython.org>

@@ -1,5 +1,5 @@
 ---
-title: Encender Led con ESP8266 + Telegram Micropython
+title: Acceder a ESP8266 (Wemos) Micropython
 author: Kevin Lupera
 date: 10 de Marzo de 2018
 email: kevinlupera1997@outlook.com
@@ -10,22 +10,20 @@ keywords: esp8266, MicroPython
 # {{ page.title }}
 
 Tutorial de como acceder a ESP8266 (Wemos) con Micropython.
-
-![Imgur](https://i.imgur.com/8eb1xco.gif)
-
+![Imgur](https://i.imgur.com/otDSUoE.jpg)
 ## Herramientas principales
-- [Putty](#Putty)
-- [Ampy](#Ampy)
-- [Webrepl](#Webrepl)
+- **Putty**
+- **Ampy**
+- **Webrepl**
 
-## Esquema electrico
-
-![Esquema](https://i.imgur.com/1eydwva.png)
+## Materiales 
+- ESP8266 (Wemos D1 mini para este tutorial)
+- Cable USB
 
 ## Explicación
 
 Conectanos nuestra placa Wemos con Micropython[^MicroPython] al computador con el cabe USB.
-### Putty{#Putty}
+### Putty
 1. Descargar la herramienta de la página oficial aqui [putty].
 2. En **Windows** abrir el **Administrador de dispositivos** y revisar en que puerto COM (en mi caso *COM5*)esta conectada la tarjeta.
 ![Imgur](https://i.imgur.com/P0bD1vp.png)
@@ -35,7 +33,7 @@ Conectanos nuestra placa Wemos con Micropython[^MicroPython] al computador con e
 5. Presionar **Open**
 
 
-### Ampy{#Ampy}
+### Ampy
 Prerequisito tener instalado Python [^Python] 2.xxo 3.xx en el ordenador, visitar página oficial aquí [ampy].  
 
 1. Instalar la libreria ampy usando la siguiente sentencia en CMD.  
@@ -69,7 +67,7 @@ set AMPY_PORT=COM5
 ![Imgur](https://i.imgur.com/lxRGSCv.png)
 
 
-### Webrepl{#Webrepl}
+### Webrepl
 1. Abrir [webrepl].
 ![Imgur](https://i.imgur.com/Rr4QAZR.png)
 2. Conectar la tarjeta wemos a la misma red que tu ordenador o smartphone.
@@ -79,9 +77,9 @@ set AMPY_PORT=COM5
 Escribir el 'Hola mundo' ```print('Hello world!') ```
 ![Imgur](https://i.imgur.com/HYaSWcI.png)
 
-[putty]: (http://www.putty.org/)
-[ampy]: (https://github.com/adafruit/ampy)
-[webrepl]: (https://micropython.org/webrepl/)
+[putty]: https://www.putty.org/
+[ampy]: https://github.com/adafruit/amp
+[webrepl]: https://micropython.org/webrepl/
 
 [^MicroPython]:  Pagina oficial MicroPython: <http://micropython.org>
-[^MicroPython]:  Pagina oficial Python: <https://www.python.org>
+[^Python]:  Pagina oficial Python: <https://www.python.org>

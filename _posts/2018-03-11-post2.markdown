@@ -1,0 +1,87 @@
+---
+title: Encender Led con ESP8266 + Telegram Micropython
+author: Kevin Lupera
+date: 10 de Marzo de 2018
+email: kevinlupera1997@outlook.com
+keywords: esp8266, MicroPython
+---
+{% include ads.html %}
+
+# {{ page.title }}
+
+Tutorial de como acceder a ESP8266 (Wemos) con Micropython.
+
+![Imgur](https://i.imgur.com/8eb1xco.gif)
+
+## Herramientas principales
+- [Putty](#Putty)
+- [Ampy](#Ampy)
+- [Webrepl](#Webrepl)
+
+## Esquema electrico
+
+![Esquema](https://i.imgur.com/1eydwva.png)
+
+## Explicación
+
+Conectanos nuestra placa Wemos con Micropython[^MicroPython] al computador con el cabe USB.
+### Putty{#Putty}
+1. Descargar la herramienta de la página oficial aqui [putty].
+2. En **Windows** abrir el **Administrador de dispositivos** y revisar en que puerto COM (en mi caso *COM5*)esta conectada la tarjeta.
+![Imgur](https://i.imgur.com/P0bD1vp.png)
+3. Abrir Putty.
+4. Elegir el tipo de conexión **Serial**, escribir el puerto COM (en mi caso *COM5*) y la velocidad **15200**.
+![Imgur](https://i.imgur.com/33iAq0w.png)
+5. Presionar **Open**
+
+
+### Ampy{#Ampy}
+Prerequisito tener instalado Python [^Python] 2.xxo 3.xx en el ordenador, visitar página oficial aquí [ampy].  
+
+1. Instalar la libreria ampy usando la siguiente sentencia en CMD.  
+```
+pip install adafruit-ampy
+```
+2. En ***Windows*** abrir el **Administrador de dispositivos** y revisar en que puerto COM (en mi caso *COM5*)esta conectada la tarjeta.  
+![Imgur](https://i.imgur.com/P0bD1vp.png)
+3. Abrir una ventana CMD y ejecutar la siguiente sentencia.  
+```
+ampy --help
+```  
+
+![Imgur](https://i.imgur.com/ZlvWuKy.png)
+
+4. Seteamos el puerto COM así.   
+```
+set AMPY_PORT=COM5
+```  
+
+#### Operaciones
+#Tabla  
+| Operación | Código |    
+| -- | -- |  
+| Listar archivos existentes | ```ampy ls ``` |  
+| Obtener un archivo  | ```ampy get nombre_archivo.py nombre_archivo_guardar.py ``` |   
+| Guardar un archivo  | ```ampy put nombre_archivo.py``` |  
+| Borrar un archivo  | ```ampy rm nombre_archivo.py``` |  
+| Correr un archivo  | ```ampy run nombre_archivo.py``` |  
+- Listar archivos existentes  
+![Imgur](https://i.imgur.com/lxRGSCv.png)
+
+
+### Webrepl{#Webrepl}
+1. Abrir [webrepl].
+![Imgur](https://i.imgur.com/Rr4QAZR.png)
+2. Conectar la tarjeta wemos a la misma red que tu ordenador o smartphone.
+3. Escribir la dirección ip y presionar **Connect**.
+4. Escribir la contraseña y pulsar **enter**.
+![Imgur](https://i.imgur.com/RiUJpKp.png) 
+Escribir el 'Hola mundo' ```print('Hello world!') ```
+![Imgur](https://i.imgur.com/HYaSWcI.png)
+
+[putty]: (http://www.putty.org/)
+[ampy]: (https://github.com/adafruit/ampy)
+[webrepl]: (https://micropython.org/webrepl/)
+
+[^MicroPython]:  Pagina oficial MicroPython: <http://micropython.org>
+[^MicroPython]:  Pagina oficial Python: <https://www.python.org>

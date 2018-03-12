@@ -55,9 +55,9 @@ set AMPY_PORT=COM5
 ```  
 
 #### Operaciones básicas.  
-| Operación                  | Código                                                      |   
-| -------------------------- | ----------------------------------------------------        | 
-| Listar archivos existentes | ```ampy ls ```                                              | 
+| Operación | Código  |   
+| --- | ---        | 
+| Listar archivos existentes | ```ampy ls ``` | 
 | Obtener un archivo         | ```ampy get nombre_archivo.py nombre_archivo_guardar.py ``` |  
 | Guardar un archivo         | ```ampy put nombre_archivo.py```                            |  
 | Borrar un archivo          | ```ampy rm nombre_archivo.py```                             |   

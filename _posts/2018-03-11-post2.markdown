@@ -54,14 +54,17 @@ ampy --help
 set AMPY_PORT=COM5
 ```  
 
-#### Operaciones básicas.  
-| Operación | Código  |   
-| --- | ---        | 
+#### Operaciones básicas.  
+
+| Descripción | Commando | 
+|--- | --- | 
 | Listar archivos existentes | ```ampy ls ``` | 
-| Obtener un archivo         | ```ampy get nombre_archivo.py nombre_archivo_guardar.py ``` |  
-| Guardar un archivo         | ```ampy put nombre_archivo.py```                            |  
-| Borrar un archivo          | ```ampy rm nombre_archivo.py```                             |   
-| Correr un archivo          | ```ampy run nombre_archivo.py```                            |   
+| Obtener un archivo | ```ampy get nombre_archivo.py nombre_archivo_guardar.py ```| 
+| Guardar un archivo | ```ampy put nombre_archivo.py``` |  
+| Borrar un archivo | ```ampy rm nombre_archivo.py``` |   
+| Correr un archivo | ```ampy run nombre_archivo.py``` |   
+
+
 - Listar archivos existentes 
 ![Imgur](https://i.imgur.com/lxRGSCv.png)
 

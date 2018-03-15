@@ -54,16 +54,18 @@ ampy --help
 set AMPY_PORT=COM5
 ```  
 
-#### Operaciones
-#Tabla  
-| Operación | Código |    
-| -- | -- |  
-| Listar archivos existentes | ```ampy ls ``` |  
-| Obtener un archivo  | ```ampy get nombre_archivo.py nombre_archivo_guardar.py ``` |   
-| Guardar un archivo  | ```ampy put nombre_archivo.py``` |  
-| Borrar un archivo  | ```ampy rm nombre_archivo.py``` |  
-| Correr un archivo  | ```ampy run nombre_archivo.py``` |  
-- Listar archivos existentes  
+#### Operaciones básicas.  
+
+| Descripción | Commando | 
+|--- | --- | 
+| Listar archivos existentes | ```ampy ls ``` | 
+| Obtener un archivo | ```ampy get nombre_archivo.py nombre_archivo_guardar.py ```| 
+| Guardar un archivo | ```ampy put nombre_archivo.py``` |  
+| Borrar un archivo | ```ampy rm nombre_archivo.py``` |   
+| Correr un archivo | ```ampy run nombre_archivo.py``` |   
+
+
+- Listar archivos existentes 
 ![Imgur](https://i.imgur.com/lxRGSCv.png)
 
 
@@ -78,7 +80,7 @@ Escribir el 'Hola mundo' ```print('Hello world!') ```
 ![Imgur](https://i.imgur.com/HYaSWcI.png)
 
 [putty]: https://www.putty.org/
-[ampy]: https://github.com/adafruit/amp
+[ampy]: https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy
 [webrepl]: https://micropython.org/webrepl/
 
 [^MicroPython]:  Pagina oficial MicroPython: <http://micropython.org>
